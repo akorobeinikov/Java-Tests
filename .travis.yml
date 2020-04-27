@@ -1,1 +1,7 @@
-language: java
+matrix:
+  include:
+  - os: linux
+    language: java
+    dist: bionic
+    script:
+    - mvn test
